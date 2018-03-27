@@ -42,8 +42,9 @@ public class Pilha {
 	}
 
 	public void imprimir() {
-		for (int i = 0 ; i <inseridos; i++);
-
+		for (int i = 0 ; i <inseridos; i++) {
+			System.out.println(arrayInterno[i]);
+		}
 	}
 
 }

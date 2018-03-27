@@ -1,0 +1,18 @@
+package org.junit.jupiter.api;
+
+import java.util.ArrayList;
+
+public class Test {
+	ArrayList al = new ArrayList();
+
+@Test
+void tamanho() {
+	al.inserir("a");
+	al.inserir("b");
+	al.inserir("c");
+	
+	assertEquals(3, al.tamanho());
+}
+
+
+}

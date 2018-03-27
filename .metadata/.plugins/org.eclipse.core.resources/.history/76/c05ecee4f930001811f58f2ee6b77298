@@ -1,0 +1,20 @@
+package project3;
+
+import org.junit.jupiter.api.Test;
+
+
+@SuppressWarnings("deprecation")
+class PilhaTest {
+
+	@Test
+	void testPush() {
+		Pilha mp = new Pilha();
+		mp.push("Elemento 1");
+		mp.push("Elemento 2");
+		mp.push("Elemento 3");
+		
+		
+		Assert.assertEquals(3, mp.size());
+	}
+
+}
