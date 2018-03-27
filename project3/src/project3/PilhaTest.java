@@ -1,0 +1,43 @@
+package project3;
+
+import org.junit.Assert;
+import org.junit.jupiter.api.Test;
+
+
+@SuppressWarnings("deprecation")
+class PilhaTest {
+
+	@Test
+	void testPush() {
+		Pilha mp = new Pilha();
+		mp.push("Elemento 1");
+		mp.push("Elemento 2");
+		mp.push("Elemento 3");
+		
+		Assert.assertEquals(3, mp.size());
+	}
+	
+	@Test
+	public void testTop() {
+		
+		Pilha mp = new Pilha();
+		mp.push("Elemento 1");
+		mp.push("Elemento 2");
+		mp.push("Elemento 3");
+		mp.push("Elemento 4");
+		
+		Assert.assertEquals("elemento 4", mp.top());
+		Assert.assertEquals(4, mp.size());
+	}
+	
+	@Test
+	public void testPop() {
+		
+		Pilha mp1 = new Pilha();
+		mp1.push("elemento1");
+		mp1.pop();
+		
+		Assert.assertEquals(0,mp1.size());
+	}
+
+}
